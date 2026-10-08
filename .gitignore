@@ -1,0 +1,8 @@
+node_modules/
+release/
+*.app/
+*.zip
+.DS_Store
+.npm-cache/
+.electron-cache/
+*.log

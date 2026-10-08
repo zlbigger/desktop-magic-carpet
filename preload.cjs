@@ -1,0 +1,1 @@
+const{contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('rugDesktop',{hit:v=>ipcRenderer.send('rug-hit',Boolean(v)),dragging:()=>{},menu:()=>ipcRenderer.send('rug-menu'),onCommand:cb=>ipcRenderer.on('rug-command',(_,cmd)=>{if(['reset','pause','release'].includes(cmd))cb(cmd);})});

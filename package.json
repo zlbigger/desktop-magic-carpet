@@ -1,0 +1,29 @@
+{
+  "name": "desktop-rug",
+  "version": "0.1.1",
+  "description": "桌面魔毯 · Interactive desktop cloth rug for macOS",
+  "main": "main.cjs",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.mjs",
+    "package:mac": "electron-packager . DesktopRug --platform=darwin --arch=arm64 --out=release --overwrite --ignore=\"^/(release|test|\\.npm-cache|\\.electron-cache)\""
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "electron": "44.6.0",
+    "@electron/packager": "19.0.1"
+  },
+  "homepage": "https://zlbigger.com",
+  "author": {
+    "name": "zlbigger",
+    "url": "https://zlbigger.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zlbigger/desktop-magic-carpet.git"
+  }
+}
